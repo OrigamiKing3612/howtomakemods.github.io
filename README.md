@@ -2,7 +2,7 @@
 1. To make a mod for Minecraft you need
     1. Typing skills
     2. Java installed on your computer (you probably have java)
-    3. IntelliJ IDEA [download](https://www.jetbrains.com/idea/download/)
+    3. IntelliJ IDEA ([download](https://www.jetbrains.com/idea/download/))
     4. Some java knowledge (I will teach you as we go)
 2. Ok now that you have that go [here](https://fabricmc.net/develop/template/). 
 3. Then choose the mod name and package. 
