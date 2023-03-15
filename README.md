@@ -8,7 +8,7 @@
 3. Then choose the mod name and package. 
     1. The mod package would be unique to you, so use a domain name(if you own one) or `net.[your Minecraft username].mcmods.(modid)` or `name.modid`.
     2. For example this is mine `net.origamiking.mcmods.(modid)`
-    3. Then choose Minecraft Version 1.19.3. Now the checkboxes at the bottom, check the `Data Generation`, and uncheck the `Split client and common sources`. Then download the zip file. 
+    3. Then choose Minecraft Version 1.19.4. Now the checkboxes at the bottom, check the `Data Generation`, and uncheck the `Split client and common sources`. Then download the zip file. 
     4. Unzip the file and put it somewhere you will remember. 
     5. You can also rename the folder whatever you want
     6. Now open the folder in IntelliJ.
@@ -54,8 +54,8 @@
             "template-mod.mixins.json"
         ],
         "depends": {
-            "fabricloader": ">=0.14.10",
-            "minecraft": "~1.19.3",
+            "fabricloader": ">=0.14.17",
+            "minecraft": "~1.19.4",
             "java": ">=17",
             "fabric-api": "*"
         },
