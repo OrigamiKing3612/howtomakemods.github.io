@@ -94,7 +94,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 ```
 5. Above the `registerBlockItem` method add this to make a block. Replace the `TEMPLATE_BLOCK` and `template_block` with the name of your block.
-    **TIP** when you use tab to complete something, it will auto import what it needs.
+    _**TIP when you use tab to complete something, it will auto import what it needs.**_
 ```java
     public static final Block TEMPLATE_BLOCK = registerBlock("template_block", new Block(FabricBlockSettings.of(Material.METAL).strength(0.5f).requiresTool()));
 ```
