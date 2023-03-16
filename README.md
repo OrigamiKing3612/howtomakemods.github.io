@@ -25,7 +25,7 @@
     2. Also rename the same file to `[modname]Datagen`
 13. Now go to your `fabric.mod.json` and change the things to match your mod now
     1. it should look something like this
-    ```
+    ```json
     {
         "schemaVersion": 1,
         "id": "template-mod",
