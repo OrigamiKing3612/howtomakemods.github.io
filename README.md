@@ -9,7 +9,7 @@
 3. Then choose the mod name and package. 
     1. The mod package would be unique to you, so use a domain name (if you own one) or `net.[your Minecraft username].mcmods.(modid)` or `name.modid`.
     2. For example this is mine `net.origamiking.mcmods.(modid)`
-    3. Then choose Minecraft Version 1.19.4. Now the checkboxes at the bottom, check the `Data Generation`, and uncheck the `Split client and common sources`. Then download the zip file. 
+    3. Then choose Minecraft Version 1.20. Now the checkboxes at the bottom, check the `Data Generation`, and uncheck the `Split client and common sources`. Then download the zip file. 
     4. Unzip the file and put it somewhere you will remember. 
     5. You can also rename the folder whatever you want
     6. Now open the folder in IntelliJ.
@@ -55,8 +55,8 @@
             "template-mod.mixins.json"
         ],
         "depends": {
-            "fabricloader": ">=0.14.17",
-            "minecraft": "~1.19.4",
+            "fabricloader": ">=0.14.21",
+            "minecraft": ">=1.20",
             "java": ">=17",
             "fabric-api": "*"
         },
@@ -97,7 +97,7 @@ import net.minecraft.util.Identifier;
 5. Above the `registerBlockItem` method add this to make a block. Replace the `TEMPLATE_BLOCK` and `template_block` with the name of your block.
     _**TIP when you use tab to complete something, it will auto import what it needs.**_
 ```java
-public static final Block TEMPLATE_BLOCK = registerBlock("template_block", new Block(FabricBlockSettings.of(Material.METAL).strength(0.5f).requiresTool()));
+public static final Block TEMPLATE_BLOCK = registerBlock("template_block", new Block(FabricBlockSettings.create().strength(0.5f).requiresTool().sounds(BlockSoundGroup.METAL).mapColor(MapColor.WHITE)));
 ```
 6. Now go back to your main java class. Inside the `onInitialize` method make it look like this.
 ```java
@@ -145,7 +145,7 @@ Block Texture: src/main/resources/assets/modid/textures/block/template_block.png
 ```
 15. Last but not least inside the `textures/block/` directory add the `.png` of the block.
 _**NOTE: the `your_block_name.png` needs to be 16x16 or 32x32 pixels**_
-16. On the side of the screen where the `gradle` tab is click that. Click `Tasks`-`fabric` then double click the `runClient`.
+16. On the side of the screen where the `gradle` tab is click that. Click `Tasks`/`fabric` then double click the `runClient`.
 17. When the game is loaded open the chat and `/give` your block
 ## How to add an Item
 1. Make a new package inside the modid package name it `items`
