@@ -147,3 +147,5 @@ Block Texture: src/main/resources/assets/modid/textures/block/template_block.png
 _**NOTE: the `your_block_name.png` needs to be 16x16 or 32x32 pixels**_
 16. On the side of the screen where the `gradle` tab is click that. Click `Tasks`/`fabric` then double click the `runClient`.
 17. When the game is loaded open the chat and `/give` your block
+
+Go [here](./Item.md) to make an item
