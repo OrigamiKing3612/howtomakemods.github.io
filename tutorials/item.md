@@ -10,7 +10,7 @@
         TemplateModMain.LOGGER.info("Registering Items for " + TemplateModMain.MOD_ID);
     }
 ```
-Heres the imports
+Here is the imports
 ```java
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
